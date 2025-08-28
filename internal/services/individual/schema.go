@@ -5,6 +5,7 @@ package individual
 import (
 	"context"
 
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/customfield"
 	"github.com/hashicorp/terraform-plugin-framework-jsontypes/jsontypes"
 	"github.com/hashicorp/terraform-plugin-framework-timetypes/timetypes"
 	"github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
@@ -14,7 +15,6 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/stringplanmodifier"
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/customfield"
 )
 
 var _ resource.ResourceWithConfigValidators = (*IndividualResource)(nil)

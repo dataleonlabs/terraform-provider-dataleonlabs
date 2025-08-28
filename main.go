@@ -7,8 +7,8 @@ import (
 	"flag"
 	"log"
 
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal"
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal"
 )
 
 var (
@@ -22,7 +22,7 @@ func main() {
 	flag.Parse()
 
 	opts := providerserver.ServeOpts{
-		Address: "registry.terraform.io/stainless-sdks/dataleonlabs",
+		Address: "registry.terraform.io/dataleonlabs/dataleonlabs",
 		Debug:   debug,
 	}
 

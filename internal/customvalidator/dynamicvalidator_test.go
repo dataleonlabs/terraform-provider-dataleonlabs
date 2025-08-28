@@ -2,7 +2,7 @@ package customvalidator_test
 
 import (
 	"context"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/customvalidator"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/customvalidator"
 	"math/big"
 	"testing"
 

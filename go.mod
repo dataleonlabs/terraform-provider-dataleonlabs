@@ -1,4 +1,4 @@
-module github.com/stainless-sdks/dataleonlabs-terraform
+module github.com/dataleonlabs/terraform-provider-dataleonlabs
 
 go 1.23.0
 

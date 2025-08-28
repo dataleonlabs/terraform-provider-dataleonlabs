@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/importpath"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/importpath"
 )
 
 func TestParseID(t *testing.T) {

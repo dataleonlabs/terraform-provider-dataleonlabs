@@ -9,8 +9,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/planmodifier"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
 
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/customfield"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/test_helpers"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/customfield"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/test_helpers"
 )
 
 type empty struct{}

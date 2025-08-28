@@ -21,8 +21,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
 
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/apijson"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/customfield"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/apijson"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/customfield"
 )
 
 var encoders sync.Map // map[encoderEntry]encoderFunc
