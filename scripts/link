@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+if [[ -n "$1" ]]; then
+  LOCAL_GO="$1"
+  shift
+else
+  LOCAL_GO=../dataleonlabs-go
+fi
+
+echo "==> Linking with local directory"
+go mod tidy -e
+go mod edit -replace github.com/dataleonlabs/dataleonlabs-go="$LOCAL_GO"
