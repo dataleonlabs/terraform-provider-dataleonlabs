@@ -1,6 +1,6 @@
 # Dataleonlabs Terraform Provider
 
-The [Dataleonlabs Terraform provider](https://registry.terraform.io/providers/stainless-sdks/dataleonlabs/latest/docs) provides convenient access to
+The [Dataleonlabs Terraform provider](https://registry.terraform.io/providers/dataleonlabs/dataleonlabs/latest/docs) provides convenient access to
 the Dataleonlabs REST API from Terraform.
 
 It is generated with [Stainless](https://www.stainless.com/).
@@ -14,12 +14,14 @@ on Hashicorp's website.
 
 Add the following to your `main.tf` file:
 
+<!-- x-release-please-start-version -->
+
 ```hcl
 # Declare the provider and version
 terraform {
   required_providers {
     dataleonlabs = {
-      source  = "stainless-sdks/dataleonlabs"
+      source  = "dataleonlabs/dataleonlabs"
       version = "~> 0.0.1"
     }
   }
@@ -37,10 +39,12 @@ resource "dataleonlabs_company" "example_company" {
 }
 ```
 
+<!-- x-release-please-end -->
+
 Initialize your project by running `terraform init` in the directory.
 
 Additional examples can be found in the [./examples](./examples) folder within this repository, and you can
-refer to the full documentation on [the Terraform Registry](https://registry.terraform.io/providers/stainless-sdks/dataleonlabs/latest/docs).
+refer to the full documentation on [the Terraform Registry](https://registry.terraform.io/providers/dataleonlabs/dataleonlabs/latest/docs).
 
 ### Provider Options
 
@@ -60,7 +64,7 @@ This package generally follows [SemVer](https://semver.org/spec/v2.0.0.html) con
 
 We take backwards-compatibility seriously and work hard to ensure you can rely on a smooth upgrade experience.
 
-We are keen for your feedback; please open an [issue](https://www.github.com/stainless-sdks/dataleonlabs-terraform/issues) with questions, bugs, or suggestions.
+We are keen for your feedback; please open an [issue](https://www.github.com/dataleonlabs/terraform-provider-dataleonlabs/issues) with questions, bugs, or suggestions.
 
 ## Contributing
 

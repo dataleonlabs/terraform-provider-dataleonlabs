@@ -6,8 +6,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/services/company"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/test_helpers"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/services/company"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/test_helpers"
 )
 
 func TestCompanyModelSchemaParity(t *testing.T) {

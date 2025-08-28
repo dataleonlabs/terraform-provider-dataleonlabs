@@ -6,8 +6,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/services/individual"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/test_helpers"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/services/individual"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/test_helpers"
 )
 
 func TestIndividualDataSourceModelSchemaParity(t *testing.T) {

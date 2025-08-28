@@ -3,11 +3,11 @@
 package individual
 
 import (
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/apijson"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/customfield"
 	"github.com/hashicorp/terraform-plugin-framework-jsontypes/jsontypes"
 	"github.com/hashicorp/terraform-plugin-framework-timetypes/timetypes"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/apijson"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/customfield"
 )
 
 type IndividualModel struct {

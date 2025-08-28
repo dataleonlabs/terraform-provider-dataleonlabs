@@ -8,14 +8,14 @@ import (
 
 	"github.com/dataleonlabs/dataleonlabs-go"
 	"github.com/dataleonlabs/dataleonlabs-go/option"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/services/company"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/services/individual"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/provider"
 	"github.com/hashicorp/terraform-plugin-framework/provider/schema"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/services/company"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/services/individual"
 )
 
 var _ provider.ProviderWithConfigValidators = (*DataleonlabsProvider)(nil)
