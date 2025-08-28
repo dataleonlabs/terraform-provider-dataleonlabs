@@ -7,11 +7,11 @@ import (
 
 	"github.com/dataleonlabs/dataleonlabs-go"
 	"github.com/dataleonlabs/dataleonlabs-go/packages/param"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/customfield"
 	"github.com/hashicorp/terraform-plugin-framework-jsontypes/jsontypes"
 	"github.com/hashicorp/terraform-plugin-framework-timetypes/timetypes"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/customfield"
 )
 
 type IndividualDataSourceModel struct {

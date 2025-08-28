@@ -10,9 +10,9 @@ import (
 
 	"github.com/dataleonlabs/dataleonlabs-go"
 	"github.com/dataleonlabs/dataleonlabs-go/option"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/apijson"
+	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/logging"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/apijson"
-	"github.com/stainless-sdks/dataleonlabs-terraform/internal/logging"
 )
 
 // Ensure provider defined types fully satisfy framework interfaces.
