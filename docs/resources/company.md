@@ -37,6 +37,7 @@ resource "dataleonlabs_company" "example_company" {
     active_aml_suspicions = false
     callback_url = "https://example.com/callback"
     callback_url_notification = "https://example.com/notify"
+    filtering_score_aml_suspicions = 0.75
     language = "fra"
     raw_data = true
   }
@@ -102,6 +103,7 @@ Optional:
 - `active_aml_suspicions` (Boolean) Flag indicating whether there are active research AML (Anti-Money Laundering) suspicions for the company when you apply for a new entry or get an existing one.
 - `callback_url` (String) URL to receive a callback once the company is processed.
 - `callback_url_notification` (String) URL to receive notifications about the processing state and status.
+- `filtering_score_aml_suspicions` (Number) Minimum filtering score (between 0 and 1) for AML suspicions to be considered.
 - `language` (String) Preferred language for responses or notifications (e.g., "eng", "fra").
 - `raw_data` (Boolean) Flag indicating whether to include raw data in the response.
 

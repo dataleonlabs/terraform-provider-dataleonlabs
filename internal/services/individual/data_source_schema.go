@@ -391,6 +391,10 @@ func DataSourceSchema(ctx context.Context) schema.Schema {
 						Description: "Maiden name of the person, if applicable.",
 						Computed:    true,
 					},
+					"nationality": schema.StringAttribute{
+						Description: "Nationality of the individual (ISO 3166-1 alpha-3 country code).",
+						Computed:    true,
+					},
 					"phone_number": schema.StringAttribute{
 						Description: "Contact phone number including country code.",
 						Computed:    true,
@@ -499,6 +503,10 @@ func DataSourceSchema(ctx context.Context) schema.Schema {
 					},
 					"export_type": schema.StringAttribute{
 						Description: `Export format defined by the API (e.g., "json", "xml").`,
+						Computed:    true,
+					},
+					"filtering_score_aml_suspicions": schema.Float64Attribute{
+						Description: "Minimum filtering score (between 0 and 1) for AML suspicions to be considered.",
 						Computed:    true,
 					},
 					"finished_at": schema.StringAttribute{

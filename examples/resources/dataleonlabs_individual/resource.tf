@@ -7,6 +7,7 @@ resource "dataleonlabs_individual" "example_individual" {
     gender = "M"
     last_name = "Doe"
     maiden_name = "John Doe"
+    nationality = "FRA"
     phone_number = "+33 1 23 45 67 89"
   }
   source_id = "ID54410069066"
@@ -14,6 +15,7 @@ resource "dataleonlabs_individual" "example_individual" {
     active_aml_suspicions = false
     callback_url = "https://example.com/callback"
     callback_url_notification = "https://example.com/notify"
+    filtering_score_aml_suspicions = 0.75
     language = "fra"
     raw_data = true
   }

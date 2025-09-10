@@ -665,6 +665,10 @@ func DataSourceSchema(ctx context.Context) schema.Schema {
 						Description: `Export format defined by the API (e.g., "json", "xml").`,
 						Computed:    true,
 					},
+					"filtering_score_aml_suspicions": schema.Float64Attribute{
+						Description: "Minimum filtering score (between 0 and 1) for AML suspicions to be considered.",
+						Computed:    true,
+					},
 					"finished_at": schema.StringAttribute{
 						Description: "Timestamp when the process finished.",
 						Computed:    true,

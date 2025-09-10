@@ -22,6 +22,7 @@ resource "dataleonlabs_individual" "example_individual" {
     gender = "M"
     last_name = "Doe"
     maiden_name = "John Doe"
+    nationality = "FRA"
     phone_number = "+33 1 23 45 67 89"
   }
   source_id = "ID54410069066"
@@ -29,6 +30,7 @@ resource "dataleonlabs_individual" "example_individual" {
     active_aml_suspicions = false
     callback_url = "https://example.com/callback"
     callback_url_notification = "https://example.com/notify"
+    filtering_score_aml_suspicions = 0.75
     language = "fra"
     raw_data = true
   }
@@ -79,6 +81,7 @@ Optional:
 Available values: "M", "F".
 - `last_name` (String) Last name (family name) of the individual.
 - `maiden_name` (String) Maiden name, if applicable.
+- `nationality` (String) Nationality of the individual (ISO 3166-1 alpha-3 country code).
 - `phone_number` (String) Phone number of the individual.
 
 
@@ -90,6 +93,7 @@ Optional:
 - `active_aml_suspicions` (Boolean) Flag indicating whether there are active research AML (Anti-Money Laundering) suspicions for the individual when you apply for a new entry or get an existing one.
 - `callback_url` (String) URL to call back upon completion of processing.
 - `callback_url_notification` (String) URL for receive notifications about the processing state or status.
+- `filtering_score_aml_suspicions` (Number) Minimum filtering score (between 0 and 1) for AML suspicions to be considered.
 - `language` (String) Preferred language for communication (e.g., "eng", "fra").
 - `raw_data` (Boolean) Flag indicating whether to include raw data in the response.
 
