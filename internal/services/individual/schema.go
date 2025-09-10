@@ -66,6 +66,10 @@ func ResourceSchema(ctx context.Context) schema.Schema {
 						Description: "Maiden name, if applicable.",
 						Optional:    true,
 					},
+					"nationality": schema.StringAttribute{
+						Description: "Nationality of the individual (ISO 3166-1 alpha-3 country code).",
+						Optional:    true,
+					},
 					"phone_number": schema.StringAttribute{
 						Description: "Phone number of the individual.",
 						Optional:    true,
@@ -86,6 +90,10 @@ func ResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"callback_url_notification": schema.StringAttribute{
 						Description: "URL for receive notifications about the processing state or status.",
+						Optional:    true,
+					},
+					"filtering_score_aml_suspicions": schema.Float64Attribute{
+						Description: "Minimum filtering score (between 0 and 1) for AML suspicions to be considered.",
 						Optional:    true,
 					},
 					"language": schema.StringAttribute{

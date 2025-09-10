@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.0 (2025-09-10)
+
+Full Changelog: [v0.2.0...v0.3.0](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/compare/v0.2.0...v0.3.0)
+
+### Features
+
+* **api:** api update ([d6520b0](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/commit/d6520b0537cf426c316d375f59cc3302c1bcbf97))
+
+
+### Chores
+
+* **internal:** codegen related update ([fbfe6e4](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/commit/fbfe6e4e60adf91a20bbb03a27cbd1fa823f5b08))
+
 ## 0.2.0 (2025-09-06)
 
 Full Changelog: [v0.1.0...v0.2.0](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/compare/v0.1.0...v0.2.0)

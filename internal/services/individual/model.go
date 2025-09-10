@@ -48,15 +48,17 @@ type IndividualPersonModel struct {
 	Gender      types.String `tfsdk:"gender" json:"gender,optional"`
 	LastName    types.String `tfsdk:"last_name" json:"last_name,optional"`
 	MaidenName  types.String `tfsdk:"maiden_name" json:"maiden_name,optional"`
+	Nationality types.String `tfsdk:"nationality" json:"nationality,optional"`
 	PhoneNumber types.String `tfsdk:"phone_number" json:"phone_number,optional"`
 }
 
 type IndividualTechnicalDataModel struct {
-	ActiveAmlSuspicions     types.Bool   `tfsdk:"active_aml_suspicions" json:"active_aml_suspicions,optional"`
-	CallbackURL             types.String `tfsdk:"callback_url" json:"callback_url,optional"`
-	CallbackURLNotification types.String `tfsdk:"callback_url_notification" json:"callback_url_notification,optional"`
-	Language                types.String `tfsdk:"language" json:"language,optional"`
-	RawData                 types.Bool   `tfsdk:"raw_data" json:"raw_data,optional"`
+	ActiveAmlSuspicions         types.Bool    `tfsdk:"active_aml_suspicions" json:"active_aml_suspicions,optional"`
+	CallbackURL                 types.String  `tfsdk:"callback_url" json:"callback_url,optional"`
+	CallbackURLNotification     types.String  `tfsdk:"callback_url_notification" json:"callback_url_notification,optional"`
+	FilteringScoreAmlSuspicions types.Float64 `tfsdk:"filtering_score_aml_suspicions" json:"filtering_score_aml_suspicions,optional"`
+	Language                    types.String  `tfsdk:"language" json:"language,optional"`
+	RawData                     types.Bool    `tfsdk:"raw_data" json:"raw_data,optional"`
 }
 
 type IndividualAmlSuspicionsModel struct {

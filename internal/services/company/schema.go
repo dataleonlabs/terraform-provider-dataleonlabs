@@ -116,6 +116,10 @@ func ResourceSchema(ctx context.Context) schema.Schema {
 						Description: "URL to receive notifications about the processing state and status.",
 						Optional:    true,
 					},
+					"filtering_score_aml_suspicions": schema.Float64Attribute{
+						Description: "Minimum filtering score (between 0 and 1) for AML suspicions to be considered.",
+						Optional:    true,
+					},
 					"language": schema.StringAttribute{
 						Description: `Preferred language for responses or notifications (e.g., "eng", "fra").`,
 						Optional:    true,
