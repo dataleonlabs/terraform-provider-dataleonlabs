@@ -25,8 +25,8 @@ github.com/cloudflare/circl v1.1.0/go.mod h1:prBCrKB9DV4poKZY1l9zBXg2QJY7mvgRvtM
 github.com/cloudflare/circl v1.6.1 h1:zqIqSPIndyBh1bjLVVDHMPpVKqp8Su/V+6MeDzzQBQ0=
 github.com/cloudflare/circl v1.6.1/go.mod h1:uddAzsPgqdMAYatqJ0lsjX1oECcQLIlRpzZh3pJrofs=
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
-github.com/dataleonlabs/dataleonlabs-go v0.0.2 h1:xTEGnnTK0WAhVa3a2F1gqSIcGO7x13Ln3K+ccK31BOs=
-github.com/dataleonlabs/dataleonlabs-go v0.0.2/go.mod h1:Xvp5MIYNB77UOqHuxdcI1RUU/OM7uLeWg8aev5ZzMf0=
+github.com/dataleonlabs/dataleonlabs-go v0.0.3 h1:hUfsXefJdl3aaR9hQ6PhXnaHRRLYws/MtqSTEjE1xJQ=
+github.com/dataleonlabs/dataleonlabs-go v0.0.3/go.mod h1:Xvp5MIYNB77UOqHuxdcI1RUU/OM7uLeWg8aev5ZzMf0=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
