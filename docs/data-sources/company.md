@@ -286,6 +286,7 @@ Read-Only:
 - `disable_notification` (Boolean) Flag to indicate if notifications are disabled.
 - `disable_notification_date` (String) Timestamp when notifications were disabled; null if never disabled.
 - `export_type` (String) Export format defined by the API (e.g., "json", "xml").
+- `filtering_score_aml_suspicions` (Number) Minimum filtering score (between 0 and 1) for AML suspicions to be considered.
 - `finished_at` (String) Timestamp when the process finished.
 - `ip` (String) IP address of the our system handling the request.
 - `language` (String) Language preference used in the client workspace (e.g., "fra").

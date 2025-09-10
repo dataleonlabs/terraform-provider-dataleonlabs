@@ -22,6 +22,7 @@ resource "dataleonlabs_company" "example_company" {
     active_aml_suspicions = false
     callback_url = "https://example.com/callback"
     callback_url_notification = "https://example.com/notify"
+    filtering_score_aml_suspicions = 0.75
     language = "fra"
     raw_data = true
   }
