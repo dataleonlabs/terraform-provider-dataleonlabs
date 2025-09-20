@@ -22,7 +22,7 @@ terraform {
   required_providers {
     dataleonlabs = {
       source  = "dataleonlabs/dataleonlabs"
-      version = "~> 0.3.0"
+      version = "~> 0.3.1"
     }
   }
 }

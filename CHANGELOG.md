@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.1 (2025-09-20)
+
+Full Changelog: [v0.3.0...v0.3.1](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/compare/v0.3.0...v0.3.1)
+
+### Chores
+
+* ensure `tfplugindocs` always use `/var/tmp` for compilation on linux ([76594c3](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/commit/76594c3f222a889a158a3b9f8f4597d129b2c5e8))
+
 ## 0.3.0 (2025-09-10)
 
 Full Changelog: [v0.2.0...v0.3.0](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/compare/v0.2.0...v0.3.0)
