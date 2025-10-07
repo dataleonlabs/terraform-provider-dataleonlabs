@@ -81,6 +81,7 @@ func (d *IndividualDataSource) Read(ctx context.Context, req datasource.ReadRequ
 		resp.Diagnostics.AddError("failed to deserialize http request", err.Error())
 		return
 	}
+	data.ID = data.IndividualID
 
 	resp.Diagnostics.Append(resp.State.Set(ctx, &data)...)
 }

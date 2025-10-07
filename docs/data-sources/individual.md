@@ -40,7 +40,7 @@ data "dataleonlabs_individual" "example_individual" {
 - `checks` (Attributes List) List of verification or validation checks applied to the individual. (see [below for nested schema](#nestedatt--checks))
 - `created_at` (String) Timestamp of the individual's creation in ISO 8601 format.
 - `documents` (Attributes List) All documents submitted or associated with the individual. (see [below for nested schema](#nestedatt--documents))
-- `id` (String) Unique identifier of the individual.
+- `id` (String) The ID of this resource.
 - `identity_card` (Attributes) Reference to the individual's identity document. (see [below for nested schema](#nestedatt--identity_card))
 - `number` (Number) Internal sequential number or reference for the individual.
 - `person` (Attributes) Personal details of the individual, such as name, date of birth, and contact info. (see [below for nested schema](#nestedatt--person))
