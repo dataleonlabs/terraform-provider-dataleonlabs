@@ -20,6 +20,9 @@ var _ datasource.DataSourceWithConfigValidators = (*IndividualDataSource)(nil)
 func DataSourceSchema(ctx context.Context) schema.Schema {
 	return schema.Schema{
 		Attributes: map[string]schema.Attribute{
+			"id": schema.StringAttribute{
+				Computed: true,
+			},
 			"individual_id": schema.StringAttribute{
 				Required: true,
 			},
@@ -39,10 +42,6 @@ func DataSourceSchema(ctx context.Context) schema.Schema {
 				Description: "Timestamp of the individual's creation in ISO 8601 format.",
 				Computed:    true,
 				CustomType:  timetypes.RFC3339Type{},
-			},
-			"id": schema.StringAttribute{
-				Description: "Unique identifier of the individual.",
-				Computed:    true,
 			},
 			"number": schema.Int64Attribute{
 				Description: "Internal sequential number or reference for the individual.",
