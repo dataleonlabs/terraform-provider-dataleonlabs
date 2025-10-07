@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.4.0 (2025-10-07)
+
+Full Changelog: [v0.3.0...v0.4.0](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/compare/v0.3.0...v0.4.0)
+
+### Features
+
+* added capability for `dynamicvalidator` to do arbitrary semantic equivalence check ([c82ab59](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/commit/c82ab599864adacfaf5665074c5e0ee55cbcf845))
+
+
+### Bug Fixes
+
+* bugfix for setting JSON keys with special characters ([2bb8cfc](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/commit/2bb8cfc489dd5ae55cbe991226e306bfe9b15b2e))
+* correctly detect more ID attributes for data sources ([3e46c59](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/commit/3e46c599c394ab81ba9fb0a8c0a38d685f4e789e))
+
+
+### Chores
+
+* do not install brew dependencies in ./scripts/bootstrap by default ([06fafc2](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/commit/06fafc2c12a2abae1b55a5d6d90ab24fc5899d5a))
+* ensure `tfplugindocs` always use `/var/tmp` for compilation on linux ([76594c3](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/commit/76594c3f222a889a158a3b9f8f4597d129b2c5e8))
+
 ## 0.3.0 (2025-09-10)
 
 Full Changelog: [v0.2.0...v0.3.0](https://github.com/dataleonlabs/terraform-provider-dataleonlabs/compare/v0.2.0...v0.3.0)
