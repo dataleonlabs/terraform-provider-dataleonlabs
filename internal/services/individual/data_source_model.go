@@ -15,12 +15,12 @@ import (
 )
 
 type IndividualDataSourceModel struct {
+	ID            types.String                                                         `tfsdk:"id" path:"individual_id,computed"`
 	IndividualID  types.String                                                         `tfsdk:"individual_id" path:"individual_id,required"`
 	Document      types.Bool                                                           `tfsdk:"document" query:"document,optional"`
 	Scope         types.String                                                         `tfsdk:"scope" query:"scope,optional"`
 	AuthURL       types.String                                                         `tfsdk:"auth_url" json:"auth_url,computed"`
 	CreatedAt     timetypes.RFC3339                                                    `tfsdk:"created_at" json:"created_at,computed" format:"date-time"`
-	ID            types.String                                                         `tfsdk:"id" json:"id,computed"`
 	Number        types.Int64                                                          `tfsdk:"number" json:"number,computed"`
 	PortalURL     types.String                                                         `tfsdk:"portal_url" json:"portal_url,computed"`
 	SourceID      types.String                                                         `tfsdk:"source_id" json:"source_id,computed"`
