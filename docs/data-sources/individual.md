@@ -232,6 +232,7 @@ Read-Only:
 - `location_ip` (String) IP address of the end client (final user) captured.
 - `need_review_at` (String) Timestamp indicating when the request or process needs review; null if none.
 - `notification_confirmation` (Boolean) Flag indicating if notification confirmation is required or received.
+- `portal_steps` (List of String) List of steps to include in the portal workflow.
 - `qr_code` (String) Indicates whether QR code is enabled ("true" or "false").
 - `raw_data` (Boolean) Flag indicating whether to include raw data in the response.
 - `rejected_at` (String) Timestamp when the request or process was rejected; null if not rejected.

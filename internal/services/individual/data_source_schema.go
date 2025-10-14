@@ -8,6 +8,7 @@ import (
 	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/customfield"
 	"github.com/hashicorp/terraform-plugin-framework-jsontypes/jsontypes"
 	"github.com/hashicorp/terraform-plugin-framework-timetypes/timetypes"
+	"github.com/hashicorp/terraform-plugin-framework-validators/listvalidator"
 	"github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
@@ -533,6 +534,23 @@ func DataSourceSchema(ctx context.Context) schema.Schema {
 					"notification_confirmation": schema.BoolAttribute{
 						Description: "Flag indicating if notification confirmation is required or received.",
 						Computed:    true,
+					},
+					"portal_steps": schema.ListAttribute{
+						Description: "List of steps to include in the portal workflow.",
+						Computed:    true,
+						Validators: []validator.List{
+							listvalidator.ValueStringsAre(
+								stringvalidator.OneOfCaseInsensitive(
+									"identity_verification",
+									"document_signing",
+									"proof_of_address",
+									"selfie",
+									"face_match",
+								),
+							),
+						},
+						CustomType:  customfield.NewListType[types.String](ctx),
+						ElementType: types.StringType,
 					},
 					"qr_code": schema.StringAttribute{
 						Description: `Indicates whether QR code is enabled ("true" or "false").`,

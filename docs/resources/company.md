@@ -39,6 +39,7 @@ resource "dataleonlabs_company" "example_company" {
     callback_url_notification = "https://example.com/notify"
     filtering_score_aml_suspicions = 0.75
     language = "fra"
+    portal_steps = ["identity_verification", "document_signing"]
     raw_data = true
   }
 }
@@ -105,6 +106,7 @@ Optional:
 - `callback_url_notification` (String) URL to receive notifications about the processing state and status.
 - `filtering_score_aml_suspicions` (Number) Minimum filtering score (between 0 and 1) for AML suspicions to be considered.
 - `language` (String) Preferred language for responses or notifications (e.g., "eng", "fra").
+- `portal_steps` (List of String) List of steps to include in the portal workflow.
 - `raw_data` (Boolean) Flag indicating whether to include raw data in the response.
 
 

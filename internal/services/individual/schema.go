@@ -8,6 +8,7 @@ import (
 	"github.com/dataleonlabs/terraform-provider-dataleonlabs/internal/customfield"
 	"github.com/hashicorp/terraform-plugin-framework-jsontypes/jsontypes"
 	"github.com/hashicorp/terraform-plugin-framework-timetypes/timetypes"
+	"github.com/hashicorp/terraform-plugin-framework-validators/listvalidator"
 	"github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema"
@@ -99,6 +100,22 @@ func ResourceSchema(ctx context.Context) schema.Schema {
 					"language": schema.StringAttribute{
 						Description: `Preferred language for communication (e.g., "eng", "fra").`,
 						Optional:    true,
+					},
+					"portal_steps": schema.ListAttribute{
+						Description: "List of steps to include in the portal workflow.",
+						Optional:    true,
+						Validators: []validator.List{
+							listvalidator.ValueStringsAre(
+								stringvalidator.OneOfCaseInsensitive(
+									"identity_verification",
+									"document_signing",
+									"proof_of_address",
+									"selfie",
+									"face_match",
+								),
+							),
+						},
+						ElementType: types.StringType,
 					},
 					"raw_data": schema.BoolAttribute{
 						Description: "Flag indicating whether to include raw data in the response.",

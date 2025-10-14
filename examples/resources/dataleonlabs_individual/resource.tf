@@ -17,6 +17,7 @@ resource "dataleonlabs_individual" "example_individual" {
     callback_url_notification = "https://example.com/notify"
     filtering_score_aml_suspicions = 0.75
     language = "fra"
+    portal_steps = ["identity_verification", "selfie", "face_match"]
     raw_data = true
   }
 }

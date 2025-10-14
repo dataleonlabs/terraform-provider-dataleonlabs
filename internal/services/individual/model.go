@@ -53,12 +53,13 @@ type IndividualPersonModel struct {
 }
 
 type IndividualTechnicalDataModel struct {
-	ActiveAmlSuspicions         types.Bool    `tfsdk:"active_aml_suspicions" json:"active_aml_suspicions,optional"`
-	CallbackURL                 types.String  `tfsdk:"callback_url" json:"callback_url,optional"`
-	CallbackURLNotification     types.String  `tfsdk:"callback_url_notification" json:"callback_url_notification,optional"`
-	FilteringScoreAmlSuspicions types.Float64 `tfsdk:"filtering_score_aml_suspicions" json:"filtering_score_aml_suspicions,optional"`
-	Language                    types.String  `tfsdk:"language" json:"language,optional"`
-	RawData                     types.Bool    `tfsdk:"raw_data" json:"raw_data,optional"`
+	ActiveAmlSuspicions         types.Bool      `tfsdk:"active_aml_suspicions" json:"active_aml_suspicions,optional"`
+	CallbackURL                 types.String    `tfsdk:"callback_url" json:"callback_url,optional"`
+	CallbackURLNotification     types.String    `tfsdk:"callback_url_notification" json:"callback_url_notification,optional"`
+	FilteringScoreAmlSuspicions types.Float64   `tfsdk:"filtering_score_aml_suspicions" json:"filtering_score_aml_suspicions,optional"`
+	Language                    types.String    `tfsdk:"language" json:"language,optional"`
+	PortalSteps                 *[]types.String `tfsdk:"portal_steps" json:"portal_steps,optional"`
+	RawData                     types.Bool      `tfsdk:"raw_data" json:"raw_data,optional"`
 }
 
 type IndividualAmlSuspicionsModel struct {
