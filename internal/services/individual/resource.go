@@ -194,7 +194,7 @@ func (r *IndividualResource) Delete(ctx context.Context, req resource.DeleteRequ
 }
 
 func (r *IndividualResource) ImportState(ctx context.Context, req resource.ImportStateRequest, resp *resource.ImportStateResponse) {
-	var data *IndividualModel = new(IndividualModel)
+	var data = new(IndividualModel)
 
 	path := ""
 	diags := importpath.ParseImportID(
