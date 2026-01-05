@@ -125,6 +125,7 @@ type IndividualIdentityCardModel struct {
 	BirthPlace             types.String `tfsdk:"birth_place" json:"birth_place,computed"`
 	Birthday               types.String `tfsdk:"birthday" json:"birthday,computed"`
 	Country                types.String `tfsdk:"country" json:"country,computed"`
+	EntitlementDate        types.String `tfsdk:"entitlement_date" json:"entitlement_date,computed"`
 	ExpirationDate         types.String `tfsdk:"expiration_date" json:"expiration_date,computed"`
 	FirstName              types.String `tfsdk:"first_name" json:"first_name,computed"`
 	FrontDocumentSignedURL types.String `tfsdk:"front_document_signed_url" json:"front_document_signed_url,computed"`

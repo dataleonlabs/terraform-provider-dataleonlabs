@@ -312,6 +312,10 @@ func DataSourceSchema(ctx context.Context) schema.Schema {
 						Description: "Country code issuing the document (ISO 3166-1 alpha-2).",
 						Computed:    true,
 					},
+					"entitlement_date": schema.StringAttribute{
+						Description: "Date of entitlement or validity start date, in YYYY-MM-DD format.",
+						Computed:    true,
+					},
 					"expiration_date": schema.StringAttribute{
 						Description: "Expiration date of the document, in YYYY-MM-DD format.",
 						Computed:    true,

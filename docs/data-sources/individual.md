@@ -151,6 +151,7 @@ Read-Only:
 - `birth_place` (String) Place of birth as indicated on the document.
 - `birthday` (String) Date of birth in DD/MM/YYYY format as shown on the document.
 - `country` (String) Country code issuing the document (ISO 3166-1 alpha-2).
+- `entitlement_date` (String) Date of entitlement or validity start date, in YYYY-MM-DD format.
 - `expiration_date` (String) Expiration date of the document, in YYYY-MM-DD format.
 - `first_name` (String) First name as shown on the document.
 - `front_document_signed_url` (String) Signed URL linking to the front image of the document.
