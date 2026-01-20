@@ -207,6 +207,7 @@ type CompanyTechnicalDataDataSourceModel struct {
 	ActiveAmlSuspicions         types.Bool                     `tfsdk:"active_aml_suspicions" json:"active_aml_suspicions,computed"`
 	APIVersion                  types.Int64                    `tfsdk:"api_version" json:"api_version,computed"`
 	ApprovedAt                  timetypes.RFC3339              `tfsdk:"approved_at" json:"approved_at,computed" format:"date-time"`
+	ApprovedBy                  types.String                   `tfsdk:"approved_by" json:"approved_by,computed"`
 	CallbackURL                 types.String                   `tfsdk:"callback_url" json:"callback_url,computed"`
 	CallbackURLNotification     types.String                   `tfsdk:"callback_url_notification" json:"callback_url_notification,computed"`
 	DisableNotification         types.Bool                     `tfsdk:"disable_notification" json:"disable_notification,computed"`
@@ -218,11 +219,13 @@ type CompanyTechnicalDataDataSourceModel struct {
 	Language                    types.String                   `tfsdk:"language" json:"language,computed"`
 	LocationIP                  types.String                   `tfsdk:"location_ip" json:"location_ip,computed"`
 	NeedReviewAt                timetypes.RFC3339              `tfsdk:"need_review_at" json:"need_review_at,computed" format:"date-time"`
+	NeedReviewBy                types.String                   `tfsdk:"need_review_by" json:"need_review_by,computed"`
 	NotificationConfirmation    types.Bool                     `tfsdk:"notification_confirmation" json:"notification_confirmation,computed"`
 	PortalSteps                 customfield.List[types.String] `tfsdk:"portal_steps" json:"portal_steps,computed"`
 	QrCode                      types.String                   `tfsdk:"qr_code" json:"qr_code,computed"`
 	RawData                     types.Bool                     `tfsdk:"raw_data" json:"raw_data,computed"`
 	RejectedAt                  timetypes.RFC3339              `tfsdk:"rejected_at" json:"rejected_at,computed" format:"date-time"`
+	RejectedBy                  types.String                   `tfsdk:"rejected_by" json:"rejected_by,computed"`
 	SessionDuration             types.Int64                    `tfsdk:"session_duration" json:"session_duration,computed"`
 	StartedAt                   timetypes.RFC3339              `tfsdk:"started_at" json:"started_at,computed" format:"date-time"`
 	TransferAt                  timetypes.RFC3339              `tfsdk:"transfer_at" json:"transfer_at,computed" format:"date-time"`

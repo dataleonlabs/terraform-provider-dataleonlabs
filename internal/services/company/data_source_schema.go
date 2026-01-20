@@ -645,6 +645,10 @@ func DataSourceSchema(ctx context.Context) schema.Schema {
 						Computed:    true,
 						CustomType:  timetypes.RFC3339Type{},
 					},
+					"approved_by": schema.StringAttribute{
+						Description: "Identifier of the actor who approved (e.g., user id or username).",
+						Computed:    true,
+					},
 					"callback_url": schema.StringAttribute{
 						Description: "URL to receive callback data from the AML system.",
 						Computed:    true,
@@ -692,6 +696,10 @@ func DataSourceSchema(ctx context.Context) schema.Schema {
 						Computed:    true,
 						CustomType:  timetypes.RFC3339Type{},
 					},
+					"need_review_by": schema.StringAttribute{
+						Description: "Identifier of the actor who requested review (e.g., user id or username).",
+						Computed:    true,
+					},
 					"notification_confirmation": schema.BoolAttribute{
 						Description: "Flag indicating if notification confirmation is required or received.",
 						Computed:    true,
@@ -725,6 +733,10 @@ func DataSourceSchema(ctx context.Context) schema.Schema {
 						Description: "Timestamp when the request or process was rejected; null if not rejected.",
 						Computed:    true,
 						CustomType:  timetypes.RFC3339Type{},
+					},
+					"rejected_by": schema.StringAttribute{
+						Description: "Identifier of the actor who rejected (e.g., user id or username).",
+						Computed:    true,
 					},
 					"session_duration": schema.Int64Attribute{
 						Description: "Duration of the user session in seconds.",
